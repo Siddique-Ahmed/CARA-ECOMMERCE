@@ -535,8 +535,98 @@ footer .copyright p{
     font-size: 30px;
 }
 
+/* ################ Shop Page Styling #################### */
+#page-header{
+    width: 100%;
+    height: 40vh;
+    background:  url(./img/banner/b1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page-header h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+#page-header p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* ########### single Products ############ */
+#product-detail{
+    display: flex;
+    margin-top: 20px;
+}
 
-
+#product-detail .product-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#product-detail .product-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#product-detail .product-details h6{
+    font-size: 18px;
+}
+#product-detail .product-details h4{
+    padding: 40px 0 20px 0;
+    font-size: 25px;
+}
+#product-detail .product-details h2{
+    font-size: 26px;
+}
+#product-detail .product-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#product-detail .product-details select:focus{
+    outline: none;
+}
+#product-detail .product-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#product-detail .product-details input:focus{
+    outline: none;
+}
+#product-detail .product-details button{
+    background-color: #088178;
+    color: #fff;
+}
+#product-detail .product-details span{
+    line-height: 25px;
+    font-size: 20px;
+    color: #555;
+}
 
 
 
@@ -659,5 +749,17 @@ footer .copyright p{
     footer .copyright p {
         font-size: 25px;
         text-align: start;
+    }
+
+    /* ############### single product ############ */
+    #product-detail {
+        display: flex;
+        flex-direction: column;
+    }
+    #product-detail .product-image {
+        width: 100%;
+    }
+    #product-detail .product-details {
+        width: 100%;
     }
 }
